@@ -11,13 +11,14 @@ import java.util.Scanner;
  * @author mnovotny2027
  */
 public class EnumeratedType1 {
-
+//Sets up the Enumerations 
     enum Days {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}
     enum Months {January, February, March, April, May, June, July, August, September, October, November, December}
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+    //1a) Prints out the days of the week in order 1-7
        Days day1, day2, day3, day4, day5, day6, day7;
     day1 = Days.Monday;
     day2 = Days.Tuesday;
@@ -27,7 +28,7 @@ public class EnumeratedType1 {
     day6 = Days.Saturday; 
     day7 = Days.Sunday;
     System.out.println("Days of the week 1-7: \n" + day1 + ": " + (day1.ordinal() + 1) + "\n" + day2 + ": " + (day2.ordinal() + 1) + "\n" + day3 + ": " + (day3.ordinal() + 1) + "\n" + day4 + ": " + (day4.ordinal() + 1) + "\n" + day5 + ": " + (day5.ordinal() + 1) + "\n" + day6 + ": " + (day6.ordinal() + 1) + "\n" + day7 + ": " + (day7.ordinal() + 1));
-   
+    //1b) Prints out the months of the year in order 1-12
        Months months1, months2, months3, months4, months5, months6, months7, months8, months9, months10, months11, months12;
     months1 = Months.January;
     months2 = Months.February;
@@ -44,7 +45,8 @@ public class EnumeratedType1 {
     System.out.println("\nMonths of the Year 1-12: \n" + months1 + ": " + (months1.ordinal() + 1) + "\n" + months2 + ": " + (months2.ordinal() + 1) + "\n" + months3 + ": " + (months3.ordinal() + 1) + "\n" + months4 + ": " + (months4.ordinal() + 1));
     System.out.println(months5 + ": " + (months5.ordinal() + 1) + "\n" + months6 + ": " + (months6.ordinal() + 1) + "\n" + months7 + ": " + (months7.ordinal() + 1) + "\n" + months8 + ": " + (months8.ordinal() + 1) + "\n" + months9 + ": " + (months9.ordinal() + 1));
     System.out.println(months10 + ": " + (months10.ordinal() + 1) + "\n" + months11 + ": " + (months11.ordinal() + 1) + "\n" + months12 + ": " + (months12.ordinal() + 1));
-    
+
+    //2 Scans for a CCHS username and outputs the next year and the binary of the number
     Scanner scanner1 = new Scanner(System.in);
     System.out.println("\nPlease enter your CCHS username: ");
     String username = scanner1.next();
@@ -64,3 +66,4 @@ public class EnumeratedType1 {
     }
     
 }
+
