@@ -32,7 +32,7 @@ class Student{
         int s1 = c1.setScore(85);
         
         Course c2 = new Course();
-        int s2 = c2.setScore(90);
+        int s2 = c2.setScore(99);
         
         Course c3 = new Course();
         int s3 = c3.setScore(95);
@@ -54,7 +54,7 @@ class Student{
 
      public String toString(){
        String result; 
-       result = firstName + "" + lastName + "\nScore: Test #1: " + s1 + "\nScore: Test #2: " + s2 + "\nScore: Test #3: " + s3 
+       result = firstName + "" + lastName + "\nCourse 1: Test #1: " + s1 + "\nCourse 2: Test #2: " + s2 + "\nCourse 3: Test #3: " + s3 
                + "\nClass Average: " + getAverage();
        return result; 
        }
