@@ -102,6 +102,7 @@ firstName.equals(((Contact)other).getFirstName()));
 public int compareTo(Object other)
 {
 int result;
+//I had to change the compareTo Method
 String otherFirst = ((Contact)other).getFirstName();
 String otherLast = ((Contact)other).getLastName();
 String otherPhone = ((Contact)other).getPhone();
