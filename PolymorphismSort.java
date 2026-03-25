@@ -97,7 +97,7 @@ return (lastName.equals(((Contact)other).getLastName()) &&
 firstName.equals(((Contact)other).getFirstName()));
 }
 //-----------------------------------------------------------------
-// Uses both last and first names to determine ordering.
+// Sorts by phone number first and then by first name alphabetically
 //-----------------------------------------------------------------
 public int compareTo(Object other)
 {
